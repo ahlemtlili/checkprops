@@ -1,38 +1,37 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 100vh;
+ background: #f0ecec url("https://images.pexels.com/photos/5874580/pexels-photo-5874580.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")  repeat fixed top left; 
+  } 
+.image{
+  width: 300px;
+  margin-top:80px;
+  margin-bottom:8px;
+  padding:5px;
+  transition: all 1s ease-out ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.image:hover{
+  border:1px solid black;
+  border-radius:  10px;
+  width: 350px; 
+  opacity: 1;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.button {
+  padding: 5px;
+  border-radius: 50px;
+  margin: 30px;
+  width: 160px;
+  font-size: 20px;
+  font-weight: 600;
+  border-color: #3498db;
+  color: rgb(26, 7, 7);
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }

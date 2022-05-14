@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import image from "./ahlemphoto.jpg"
+import ProfileComponent from './Component/Profile/ProfileComponent';
 function App() {
+  const handleName = (fullName) => {
+    alert(`The fullname is ${fullName}`);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<ProfileComponent  fullName="Ahlem Tlili" handleName={handleName} bio="Passionnée de développement informatique , j'essaye toujours à développer mes
+compétences dans le domaine de l'IT." 
+ profession="Développeuse informatique" >  
+  <img className='image'
+src={image}
+alt=""/>
+</ProfileComponent>
     </div>
   );
 }
-
 export default App;
